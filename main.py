@@ -30,7 +30,7 @@ def punctuation_removal(text):
 
 # To Remove all the StopWords from the 'NEWS Data'
 import nltk
-nltk.download('stopwords')
+# nltk.download('stopwords')
 from nltk.corpus import stopwords
 stopper = stopwords.words("english")
 
