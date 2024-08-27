@@ -38,7 +38,7 @@ def punctuation_removal(text):
 # Name of the Trained Piped Models
 news_predict_model = \
     [
-        "Logistic Regression",
+        # "Logistic Regression",
         "Naive Bayes",
         "Support Vector Machine (SVM)",
         "SGD Classifer",
@@ -88,7 +88,7 @@ def detect_news_predict (models, data) :
     else:
         overall_prediction = "Real NEWS"
 
-    for mpredict in range(0, 13):
+    for mpredict in range(0, 12):
         print(f"The NEWS Predicted by the {news_predict_model[mpredict]} Model :  ", prediction[mpredict][0], "!")
 
     return overall_prediction
@@ -120,7 +120,7 @@ def main() :
     # dump_model(bagging_piped_model, folder_path, "bagging_piped_model.joblib")
 
     # Loading all the Dumped Trained Piped Models
-    logistic_detect = load_model(folder_path, "logistic_piped_model.joblib")
+    # logistic_detect = load_model(folder_path, "logistic_piped_model.joblib")
     naive_bayes_detect = load_model(folder_path, "naive_bayes_piped_model.joblib")
     svm_detect = load_model(folder_path, "svm_piped_model.joblib")
     sgd_detect = load_model(folder_path, "sgd_piped_model.joblib")
@@ -137,7 +137,7 @@ def main() :
 
     # List of the Trained Piped Models
     news_detect_model = [
-        logistic_detect,
+        # logistic_detect,
         naive_bayes_detect,
         svm_detect,
         sgd_detect,
