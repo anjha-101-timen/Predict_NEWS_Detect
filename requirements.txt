@@ -2,7 +2,5 @@ streamlit
 numpy
 pandas
 joblib
-os
-string
 nltk
 nltk.corpus
