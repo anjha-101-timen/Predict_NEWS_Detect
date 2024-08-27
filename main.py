@@ -88,7 +88,7 @@ def detect_news_predict (models, data) :
     else:
         overall_prediction = "Real NEWS"
 
-    for mpredict in range(0, 14):
+    for mpredict in range(0, 13):
         print(f"The NEWS Predicted by the {news_predict_model[mpredict]} Model :  ", prediction[mpredict][0], "!")
 
     return overall_prediction
