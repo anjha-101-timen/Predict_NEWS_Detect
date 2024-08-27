@@ -29,10 +29,10 @@ def punctuation_removal(text):
 
 
 # To Remove all the StopWords from the 'NEWS Data'
-import nltk
-nltk.download('stopwords')
-from nltk.corpus import stopwords
-stopper = stopwords.words("english")
+# import nltk
+# nltk.download('stopwords')
+# from nltk.corpus import stopwords
+# stopper = stopwords.words("english")
 
 
 # Name of the Trained Piped Models
@@ -68,7 +68,8 @@ def predict_news_with_models(models, data):
 def cleaned_news(news):
     news_lower = news.apply(lambda z: z.lower())
     news_removed_punctuation = news_lower.apply(punctuation_removal)
-    news_cleaned = news_removed_punctuation.apply(lambda z: ' '.join([words for words in z.split() if words not in (stopper)]))
+    news_cleaned = news_removed_punctuation
+    # news_cleaned = news_removed_punctuation.apply(lambda z: ' '.join([words for words in z.split() if words not in (stopper)]))
     return news_cleaned
 
 
