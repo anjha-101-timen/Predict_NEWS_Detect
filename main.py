@@ -50,8 +50,9 @@ news_predict_model = \
         "Gradient Boosting (GBM)",
         "XG Boost",
         "Light GBM",
-        "Ada Boost",
-        "Bagging"
+        "Ada Boost"
+        # ,
+        # "Bagging"
     ]
 
 
@@ -132,7 +133,7 @@ def main() :
     xgb_detect = load_model(folder_path, "xgb_piped_model.joblib")
     light_gbm_detect = load_model(folder_path, "light_gbm_piped_model.joblib")
     ada_boost_detect = load_model(folder_path, "ada_boost_piped_model.joblib")
-    bagging_detect = load_model(folder_path, "bagging_piped_model.joblib")
+    # bagging_detect = load_model(folder_path, "bagging_piped_model.joblib")
 
     # List of the Trained Piped Models
     news_detect_model = [
@@ -149,7 +150,7 @@ def main() :
         xgb_detect,
         light_gbm_detect,
         ada_boost_detect,
-        bagging_detect
+        # bagging_detect
     ]
 
     # Input the 'NEWS Data' from the User
