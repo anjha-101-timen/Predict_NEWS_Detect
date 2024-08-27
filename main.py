@@ -97,7 +97,7 @@ def main() :
     st.title("Real & Fake News Detector")
 
     # Directory Path
-    folder_path = "D:\\NEWS_Detection\\Fake_NEWS_Real_NEWS_Detection_5210\\NEWS_Model\\"
+    folder_path = "\\NEWS_Model\\"
 
     # Dumping all the Trained Piped Models
     # dump_model(logistic_piped_model, folder_path, "logistic_piped_model.joblib")
